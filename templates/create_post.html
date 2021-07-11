@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="d-flex justify-content-center mb-5" style="font-size: 40px">
+        Create Post
+    </div>
+    <form action="/create_post" method="post">
+        <div class="form-group">
+            <label for="post_title">Title</label>
+            <input name="title" type="text" class="form-control"
+                   id="post_title"
+                   aria-describedby="post_title" maxlength="100"
+                   placeholder="Enter title">
+        </div>
+        <div class="form-group">
+            <label for="post_text">Text</label>
+            <input name="text" type="text" class="form-control"
+                   id="post_text" maxlength="100" placeholder="Enter text">
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input name="author" type="text" class="form-control"
+                   id="author" maxlength="1000"
+                   placeholder="Enter author name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>
